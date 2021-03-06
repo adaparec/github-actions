@@ -6,7 +6,7 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: list Names
+      - name: Clonning Repositorie
         env:
           GITHUB_TOKEN_ACTION: ${{ secrets.GITHUB_TOKEN }}
         run: |
