@@ -1,0 +1,14 @@
+name: Actions commands
+
+on: [push]
+
+jobs:
+  run-actions-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list Names
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "{{ github.token }}""
