@@ -10,5 +10,5 @@ jobs:
         env:
           GITHUB_TOKEN_ACTION: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git clone https://adaparec:$GITHUB_TOKEN_ACTION@github.com/$GITHUB_REPOSITORY
+          git clone https://adaparec:$GITHUB_TOKEN_ACTION@github.com/$GITHUB_REPOSITORY.git
           git checkout $GITHUB_SHA
