@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: list Names
         run: |
-          git clone https://adaparec:18710131d0701808a8aea372dd21132f8c892169/github.com/$GITHUB_REPOSITORY
+          git clone https://adaparec:9d0ea93911ba2e36de56caeba64a6a7ad0031c72/github.com/$GITHUB_REPOSITORY
           git checkout $GITHUB_SHA
