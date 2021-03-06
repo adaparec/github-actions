@@ -8,8 +8,5 @@ jobs:
     steps:
       - name: list Names
         run: |
-          echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
-          echo $GITHUB_WORKSPACE
-          echo $GITHUB_REF
-          echo "https://docs.github.com/pt/actions/reference/environment-variables"
+          git clone git@github:$GITHUB_REPOSITORY
+          git checkout $GITHUB_SHA
