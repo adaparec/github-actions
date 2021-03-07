@@ -1,0 +1,19 @@
+name: Actions commands
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  run-gitcheckout-commands:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: GitHub Checkout
+        uses: actions/checkout@v1
+
+      - name: list Names after Checkout
+        run: |
+          pwd
+          ls -a
