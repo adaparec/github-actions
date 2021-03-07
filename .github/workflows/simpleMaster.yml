@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  run-gitcheckout-commands:
+  run-gitcheckout-commands-main:
     runs-on: ubuntu-latest
     steps:
 

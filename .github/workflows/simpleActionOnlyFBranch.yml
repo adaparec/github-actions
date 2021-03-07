@@ -6,7 +6,7 @@ on:
       - '*'
 
 jobs:
-  run-gitcheckout-commands:
+  run-gitcheckout-commands-fb:
     runs-on: ubuntu-latest
     steps:
 
