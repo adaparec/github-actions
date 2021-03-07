@@ -1,0 +1,17 @@
+name: Actions commands
+
+on: [push]
+
+jobs:
+  run-gitcheckout-commands:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+        with:
+          ref: $GITHUB_REF
+
+      - name: list Names after Checkout
+        run: |
+          pwd
+          ls -a
